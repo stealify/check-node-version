@@ -11,7 +11,7 @@ var PROGRAMS = {
   node: {
     getVersion: runVersionCommand.bind(null, "node --version"),
     getInstallInstructions: function(v) {
-      return "To install node, run `nvm install " + v +
+      return "To install node, run `npm install -g n && n " + v +
         "` or see https://nodejs.org/";
     }
   },
